@@ -471,8 +471,7 @@ data/demo/               the adversarial red team payload, kept out of the
                          sample-leads glob so it never runs as a normal lead
 data/sheets/             benchmark, lane_state, demand_corpus seeds
 workflows/               the importable n8n workflow (generated)
-docs/one-pager.md        impact, scale, tradeoff
-docs/loom-script.md      the walkthrough running order
+docs/one-pager.md        impact, scale, tradeoff (the required one-pager)
 docs/clarifying-question.md
 out/                     run output, including run-trace.txt
 ```

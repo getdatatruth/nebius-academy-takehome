@@ -1,6 +1,5 @@
 /**
- * Renders out/eval-report.md as a browser page, so all three recording tabs
- * are real browser tabs rather than files that open in TextEdit.
+ * Renders out/eval-report.md as a browser page for easier reading.
  * Run: npm run evalpage
  */
 import { readFile, writeFile } from 'node:fs/promises';

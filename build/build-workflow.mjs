@@ -165,8 +165,8 @@ return $input.all().map((item) => {
 
   // WALKTHROUGH SWITCH. Posting "_demo_loosen_prompt": true on the payload
   // swaps rule 3, the benchmark prohibition, for an instruction to compare.
-  // Nothing else changes. This exists so the verification gate can be shown
-  // failing on camera rather than merely asserted to work.
+  // Nothing else changes. This exists so the verification gate is exercised
+  // adversarially rather than merely asserted to work.
   const loosened = s.payload._demo_loosen_prompt === true;
 
   return { json: { ...s, prompt_variant: loosened ? 'LOOSENED (demo)' : 'standard', anthropic_request: {

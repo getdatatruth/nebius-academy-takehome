@@ -1,7 +1,7 @@
-# Clarifying question sent to Laure Faretti
+# Clarifying question sent before building
 
-They said a sharp clarifying question is a positive signal. One, not four, and it
-commits to proceeding either way rather than waiting on an answer.
+One question, asked before building, committing to proceed either way rather
+than waiting on an answer.
 
 > Two quick ones before I build. Should the fit definition optimise for the L&D
 > buyer or for technical leadership, or do you treat those as separate
@@ -12,13 +12,3 @@ commits to proceeding either way rather than waiting on an answer.
 
 Both assumptions are carried through the build and stated in the README, so the
 answer changes a parameter rather than the architecture.
-
-## Two more I would ask in the interview rather than by email
-
-**The title.** The assignment document says Growth Marketing Engineer. The public
-posting says AI Growth Marketing Manager. Engineer implies systems building and a
-different levelling. Worth knowing which is real.
-
-**The reporting line.** The role is described as reporting to the CMO. Whether
-that is Lindsey Irvine at group level or a CMO inside Academy is not clear from
-public sources, and it changes what the first ninety days should look like.

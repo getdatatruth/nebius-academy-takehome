@@ -2,7 +2,7 @@
  * Renders out/leads.csv as a spreadsheet-style page.
  *
  * The local n8n build writes rows to pass-through nodes rather than Google
- * Sheets, so there is nothing spreadsheet-shaped to point at on camera. This
+ * Sheets, so there is nothing spreadsheet-shaped to inspect. This
  * renders the real output file, unmodified, into the view the `leads` tab
  * would show. No data is invented here: it reads whatever the last run wrote.
  *

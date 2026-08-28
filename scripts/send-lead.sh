@@ -6,8 +6,8 @@
 # With no lead files it sends all five in order, then the loosened-prompt
 # rerun that the verification gate is supposed to block.
 #
-# For the Loom: paste the TEST webhook URL from the n8n canvas, click
-# "Listen for test event" first, then send one lead and watch the canvas.
+# To watch a run on the canvas: paste the TEST webhook URL from the n8n
+# editor, click "Listen for test event", then send one lead.
 set -euo pipefail
 
 URL="${1:-}"
