@@ -1,0 +1,13 @@
+{
+  "subject": "Governance at 39, and what is safe to ship",
+  "body": "Tomas,\n\nYour Playline Games assessment put governance at 39, below the median among gaming organisations that have completed it (n=38). Tooling came out at 71, so adoption is not the problem.\n\nThat lines up with what you wrote, that your engineers use AI daily but nobody can tell you what is safe to ship. On these numbers it reads as a decision framework gap rather than a tooling gap.\n\nNebius Academy is the education and research hub of Nebius, an AI cloud company, and the material is taught by practitioners who run AI in production.\n\nOpen to 20 minutes on where that line should sit for your 120 engineers?\n\nAdam",
+  "facts_used": [
+    "weakest_section: governance (39)",
+    "strongest_section: tooling (71)",
+    "company_name: Playline Games",
+    "team_size_to_upskill: 120",
+    "stated_priority: Our engineers use AI daily but nobody can tell me what is safe to ship",
+    "benchmark: governance score of 39 is below the median among gaming organisations that have completed this assessment (n=38)",
+    "Nebius Academy is the education and research hub of Nebius, an AI cloud company"
+  ]
+}

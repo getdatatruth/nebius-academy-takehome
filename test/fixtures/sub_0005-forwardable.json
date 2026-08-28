@@ -1,0 +1,11 @@
+{
+  "subject": "Nebius Academy assessment, worth a technical read",
+  "body": "We completed the Nebius Academy AI readiness assessment. Governance came out at 58 while tooling is at 74, so the gap is how we govern the work rather than the tools we have. Nebius Academy is the education and research hub of Nebius, an AI cloud company, their programmes are taught by practitioners who run AI in production and they certify engineers in AI cloud skills. Would you take a look before I put anything to the partners?",
+  "facts_used": [
+    "weakest_section: governance (58)",
+    "strongest_section: tooling (74)",
+    "Nebius Academy is the education and research hub of Nebius, an AI cloud company",
+    "Programs are taught by practitioners who run AI in production",
+    "Nebius Academy runs role-based certification for engineers in AI cloud skills"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "verdict": "FAIL",
+  "notes": "The draft was written without a benchmark fact available and still asserts a comparative position four separate times, plus one fabricated percentage. Route to human review.",
+  "findings": [
+    {
+      "claim": "sits in the bottom quartile compared to similar logistics operators",
+      "why": "sits in the bottom quartile compared to similar logistics operators: no benchmark fact was provided, so no comparative position can be asserted",
+      "severity": "block"
+    },
+    {
+      "claim": "well below average for the sector",
+      "why": "well below average for the sector: implies a sector distribution that is not in the permitted facts",
+      "severity": "block"
+    },
+    {
+      "claim": "Tooling at 57 is closer to the benchmark",
+      "why": "Tooling at 57 is closer to the benchmark: references a benchmark that does not exist in the permitted facts",
+      "severity": "block"
+    },
+    {
+      "claim": "Most organisations that run three pilots without one sticking have the same underlying problem",
+      "why": "Most organisations that run three pilots without one sticking have the same underlying problem: unsupported generalisation about other companies",
+      "severity": "block"
+    },
+    {
+      "claim": "around 70 percent never reach production",
+      "why": "around 70 percent never reach production: invented statistic, no such figure in the permitted facts",
+      "severity": "block"
+    }
+  ]
+}

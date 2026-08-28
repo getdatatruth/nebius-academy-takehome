@@ -1,0 +1,10 @@
+{
+  "subject": "AI readiness assessment for Banco Example, worth your view",
+  "body": "We completed the Nebius Academy AI readiness assessment. Skills came out at 22 against tooling at 45, so the gap is capability rather than platform. Their programmes are taught by practitioners who run AI in production and they certify engineers in AI cloud skills, which is the part I would want you to sanity check before we commit to anything. Worth 20 minutes of your time?",
+  "facts_used": [
+    "weakest_section: skills (22)",
+    "strongest_section: tooling (45)",
+    "Programs are taught by practitioners who run AI in production",
+    "Nebius Academy runs role-based certification for engineers in AI cloud skills"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "submission_id": "sub_0005",
+  "submitted_at": "2026-08-26T15:58:00Z",
+  "first_name": "Priya",
+  "last_name": "Raman",
+  "work_email": "priya.raman@vantagepartners.ie",
+  "company_name": "Vantage Partners",
+  "job_title": "Learning and Development Manager",
+  "country": "Ireland",
+  "assessment": {
+    "overall_score": 66,
+    "sections": { "strategy": 70, "skills": 61, "tooling": 74, "governance": 58 },
+    "team_size_to_upskill": 45,
+    "stated_priority": "Clients keep asking what our AI capability is and I need an answer I can stand behind"
+  }
+}

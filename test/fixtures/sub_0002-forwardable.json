@@ -1,0 +1,10 @@
+{
+  "subject": "Nebius Academy assessment, one for the L and D plan",
+  "body": "We completed the Nebius Academy AI readiness assessment. Governance scored 39 while tooling scored 71, so the shortfall is how people apply the tools rather than access to them. Nebius Academy build tailored programmes off a pre-training assessment, which would mean cohorts designed around the 120 engineers we need to cover rather than a generic course. Can you look at whether this fits next quarter?",
+  "facts_used": [
+    "weakest_section: governance (39)",
+    "strongest_section: tooling (71)",
+    "team_size_to_upskill: 120",
+    "The offer combines tailored programs, data-driven pre-training assessments and expert-led instruction"
+  ]
+}

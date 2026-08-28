@@ -1,0 +1,11 @@
+{
+  "subject": "AI readiness assessment, worth twenty minutes of your time",
+  "body": "We completed the Nebius Academy AI readiness assessment for Corvus Logistics. Governance scored 33 against tooling at 57, so the issue is how AI work is overseen rather than the tools themselves. Nebius Academy is the education and research hub of Nebius, an AI cloud company, and their programmes are taught by practitioners who run AI in production. Given the three pilots that did not stick, worth your read before we take it further.",
+  "facts_used": [
+    "weakest_section: governance (33)",
+    "strongest_section: tooling (57)",
+    "company_name: Corvus Logistics",
+    "Nebius Academy is the education and research hub of Nebius, an AI cloud company",
+    "Programs are taught by practitioners who run AI in production"
+  ]
+}

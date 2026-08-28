@@ -1,0 +1,12 @@
+{
+  "subject": "Governance at 33 after three pilots",
+  "body": "Daniel,\n\nYour Corvus Logistics assessment put governance at 33, the weakest of the four sections, with tooling at 57. On the evidence of the assessment alone, the constraint is oversight rather than access to tools.\n\nYou wrote that three AI pilots in warehouse operations have not stuck. In our experience that is a decision rights question before it is a technology one.\n\nNebius Academy programmes are taught by practitioners who run AI in production, and the programme is built from the assessment rather than off a shelf, which matters with 250 people in scope.\n\nWorth 20 minutes?\n\nAdam",
+  "facts_used": [
+    "weakest_section: governance (33)",
+    "strongest_section: tooling (57)",
+    "company_name: Corvus Logistics",
+    "team_size_to_upskill: 250",
+    "stated_priority: We have run three AI pilots in warehouse operations and none of them stuck",
+    "Programs are taught by practitioners who run AI in production"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "nebius-academy-inbound-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Track A take-home: inbound lead engine with a benchmark intelligence layer, for Nebius Academy",
+  "scripts": {
+    "build": "node build/build-workflow.mjs",
+    "sheets": "node build/export-sheets.mjs",
+    "start": "node test/run-local.mjs",
+    "demand": "node test/run-demand-corpus.mjs",
+    "test": "node test/verify-workflow.mjs",
+    "all": "npm run sheets && npm run build && npm start && npm run demand && npm test",
+    "build:local": "node build/build-workflow.mjs --no-sheets",
+    "eval": "node test/evaluate.mjs",
+    "sheet": "node build/render-sheet.mjs",
+    "evalpage": "node build/render-eval.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

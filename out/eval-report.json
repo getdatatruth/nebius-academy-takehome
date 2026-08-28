@@ -1,0 +1,139 @@
+{
+  "generated_for_runs": 3,
+  "mode": "live",
+  "model": "claude-sonnet-4-6",
+  "drafted_observations": 12,
+  "gate_pass_rate": 66.7,
+  "per_lane": [
+    {
+      "lane": "HOT_LD",
+      "mode": "manual",
+      "total": 6,
+      "passed": 5,
+      "pass_rate": 83.3
+    },
+    {
+      "lane": "HOT_TECH",
+      "mode": "manual",
+      "total": 3,
+      "passed": 2,
+      "pass_rate": 66.7
+    },
+    {
+      "lane": "MQL_LD",
+      "mode": "auto",
+      "total": 3,
+      "passed": 1,
+      "pass_rate": 33.3
+    }
+  ],
+  "per_lead": [
+    {
+      "submission_id": "sub_0001",
+      "total": 3,
+      "passed": 2,
+      "pass_rate": 66.7,
+      "mean_cost": 0.032802000000000005,
+      "p50_ms": 21193
+    },
+    {
+      "submission_id": "sub_0002",
+      "total": 3,
+      "passed": 2,
+      "pass_rate": 66.7,
+      "mean_cost": 0.031315,
+      "p50_ms": 16687
+    },
+    {
+      "submission_id": "sub_0004",
+      "total": 3,
+      "passed": 3,
+      "pass_rate": 100,
+      "mean_cost": 0.030033,
+      "p50_ms": 17073
+    },
+    {
+      "submission_id": "sub_0005",
+      "total": 3,
+      "passed": 1,
+      "pass_rate": 33.3,
+      "mean_cost": 0.033190000000000004,
+      "p50_ms": 23409
+    }
+  ],
+  "block_reasons": [
+    {
+      "layer": "llm",
+      "reason": "claim not in permitted facts",
+      "count": 6,
+      "on_red_team": 4
+    },
+    {
+      "layer": "deterministic",
+      "reason": "orphan number not in permitted facts",
+      "count": 4,
+      "on_red_team": 4
+    },
+    {
+      "layer": "llm",
+      "reason": "invented statistic",
+      "count": 4,
+      "on_red_team": 4
+    },
+    {
+      "layer": "llm",
+      "reason": "benchmark peer group widened",
+      "count": 3,
+      "on_red_team": 2
+    },
+    {
+      "layer": "deterministic",
+      "reason": "comparative language with no benchmark",
+      "count": 3,
+      "on_red_team": 3
+    },
+    {
+      "layer": "llm",
+      "reason": "other",
+      "count": 2,
+      "on_red_team": 0
+    },
+    {
+      "layer": "deterministic",
+      "reason": "blocklisted authority claim",
+      "count": 2,
+      "on_red_team": 2
+    }
+  ],
+  "style_autofix_rate": 8.3,
+  "red_team": {
+    "runs": 3,
+    "caught": 3,
+    "catch_rate": 100,
+    "caught_by_deterministic_layer": 3
+  },
+  "cost": {
+    "mean_per_qualified_lead_usd": 0.03222,
+    "per_1000_leads_usd": 32.22
+  },
+  "reliability": {
+    "attempted": 18,
+    "errored": 0,
+    "error_rate": 0,
+    "by_code": {}
+  },
+  "latency_ms": {
+    "deterministic": {
+      "p50": 0,
+      "p95": 1
+    },
+    "drafts": {
+      "p50": 8391,
+      "p95": 12283
+    },
+    "verify": {
+      "p50": 12354,
+      "p95": 22567
+    }
+  }
+}

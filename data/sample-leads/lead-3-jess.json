@@ -1,0 +1,16 @@
+{
+  "submission_id": "sub_0003",
+  "submitted_at": "2026-08-26T11:47:00Z",
+  "first_name": "Jess",
+  "last_name": "Okonkwo",
+  "work_email": "jess@northline.ie",
+  "company_name": "Northline Agency",
+  "job_title": "Marketing Executive",
+  "country": "Ireland",
+  "assessment": {
+    "overall_score": 71,
+    "sections": { "strategy": 68, "skills": 74, "tooling": 79, "governance": 63 },
+    "team_size_to_upskill": 6,
+    "stated_priority": "Getting the team using AI for content without it sounding generic"
+  }
+}

@@ -1,0 +1,11 @@
+segment_key,n,p25_strategy,p50_strategy,p75_strategy,p25_skills,p50_skills,p75_skills,p25_tooling,p50_tooling,p75_tooling,p25_governance,p50_governance,p75_governance
+financial_services_1000plus,47,30,46,62,28,44,61,34,50,66,25,39,55
+software_1000plus,63,42,58,73,40,57,72,46,62,77,33,48,64
+gaming_250_999,12,33,50,66,35,52,68,41,57,71,30,46,60
+logistics_1000plus,8,24,40,57,22,38,55,28,44,60,20,34,49
+professional_services_50_249,15,36,52,68,34,51,67,39,55,70,28,43,58
+financial_services_all,96,29,45,61,27,43,60,33,49,65,24,38,54
+software_all,121,41,57,72,39,56,71,45,61,76,32,47,63
+gaming_all,38,34,51,67,36,53,69,42,58,72,31,47,61
+logistics_all,19,25,41,58,23,39,56,29,45,61,21,35,50
+professional_services_all,41,37,53,69,35,52,68,40,56,71,29,44,59

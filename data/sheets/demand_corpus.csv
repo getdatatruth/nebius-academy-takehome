@@ -1,0 +1,15 @@
+submission_id,timestamp,industry,stated_priority
+seed_0001,2026-08-20T00:00:00Z,Financial Services,We bought licences for everyone and usage fell off a cliff after month two
+seed_0002,2026-08-20T00:00:00Z,Financial Services,Compliance will not sign off on anything customer facing until someone owns the risk
+seed_0003,2026-08-20T00:00:00Z,Logistics,Pilots keep dying when the person who championed them moves on
+seed_0004,2026-08-20T00:00:00Z,Software and Technology,Engineers are shipping AI features faster than we can review them
+seed_0005,2026-08-20T00:00:00Z,Gaming,Nobody can tell me which of our AI experiments are actually worth continuing
+seed_0006,2026-08-20T00:00:00Z,Telecommunications,Our managers do not know what to delegate to AI and what to keep
+seed_0007,2026-08-20T00:00:00Z,Professional Services,Clients are asking what our AI capability is and we do not have a straight answer
+seed_0008,2026-08-20T00:00:00Z,Software and Technology,"We have the models, we do not have people who can redesign the workflow around them"
+seed_0009,2026-08-20T00:00:00Z,Financial Services,"Training happened, nothing changed in how the work is actually done"
+seed_0010,2026-08-20T00:00:00Z,Logistics,Every team is doing its own thing with AI and none of it joins up
+seed_0011,2026-08-20T00:00:00Z,Gaming,We need our leads to be able to tell good AI output from plausible rubbish
+seed_0012,2026-08-20T00:00:00Z,Telecommunications,The tools moved on again and the training we ran last year is already out of date
+seed_0013,2026-08-20T00:00:00Z,Professional Services,Getting the team using AI without everything sounding the same
+seed_0014,2026-08-20T00:00:00Z,Financial Services,We cannot measure whether any of this has made anyone more productive

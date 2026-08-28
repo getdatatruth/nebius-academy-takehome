@@ -1,0 +1,5 @@
+lane,mode,consecutive_unchanged,threshold
+HOT_LD,manual,3,20
+HOT_TECH,manual,0,20
+MQL_LD,auto,20,20
+MQL_TECH,manual,11,20

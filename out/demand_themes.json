@@ -1,0 +1,125 @@
+{
+  "themes": [
+    {
+      "theme": "Adoption happened, behaviour did not change",
+      "buyer_phrases": [
+        "We bought licences for everyone and usage fell off a cliff after month two",
+        "Training happened, nothing changed in how the work is actually done",
+        "We cannot measure whether any of this has made anyone more productive"
+      ],
+      "count": 3,
+      "industries": [
+        "Financial Services"
+      ]
+    },
+    {
+      "theme": "Pilots that do not survive contact with the organisation",
+      "buyer_phrases": [
+        "Pilots keep dying when the person who championed them moves on",
+        "We have run three AI pilots in warehouse operations and none of them stuck",
+        "Nobody can tell me which of our AI experiments are actually worth continuing"
+      ],
+      "count": 3,
+      "industries": [
+        "Logistics",
+        "Gaming"
+      ]
+    },
+    {
+      "theme": "Nobody owns the line between safe and unsafe",
+      "buyer_phrases": [
+        "Compliance will not sign off on anything customer facing until someone owns the risk",
+        "Our engineers use AI daily but nobody can tell me what is safe to ship",
+        "Engineers are shipping AI features faster than we can review them"
+      ],
+      "count": 3,
+      "industries": [
+        "Financial Services",
+        "Gaming",
+        "Software and Technology"
+      ]
+    },
+    {
+      "theme": "Managers cannot judge AI output or delegate to it",
+      "buyer_phrases": [
+        "Our managers do not know what to delegate to AI and what to keep",
+        "We need our leads to be able to tell good AI output from plausible rubbish"
+      ],
+      "count": 2,
+      "industries": [
+        "Telecommunications",
+        "Gaming"
+      ]
+    },
+    {
+      "theme": "The workflow, not the model, is the missing piece",
+      "buyer_phrases": [
+        "We have the models, we do not have people who can redesign the workflow around them",
+        "Every team is doing its own thing with AI and none of it joins up",
+        "The tools moved on again and the training we ran last year is already out of date"
+      ],
+      "count": 3,
+      "industries": [
+        "Software and Technology",
+        "Logistics",
+        "Telecommunications"
+      ]
+    },
+    {
+      "theme": "Client-facing credibility about our own AI capability",
+      "buyer_phrases": [
+        "Clients are asking what our AI capability is and we do not have a straight answer",
+        "Getting the team using AI without everything sounding the same"
+      ],
+      "count": 2,
+      "industries": [
+        "Professional Services"
+      ]
+    }
+  ],
+  "ad_angles": [
+    {
+      "channel": "LinkedIn",
+      "headline": "You bought the licences. Usage fell off after month two.",
+      "derived_from_theme": "Adoption happened, behaviour did not change"
+    },
+    {
+      "channel": "LinkedIn",
+      "headline": "Three pilots. None of them stuck. The pattern is not the technology.",
+      "derived_from_theme": "Pilots that do not survive contact with the organisation"
+    },
+    {
+      "channel": "Google",
+      "headline": "Who decides what is safe to ship with AI?",
+      "derived_from_theme": "Nobody owns the line between safe and unsafe"
+    },
+    {
+      "channel": "Google",
+      "headline": "AI training that survives the next model release",
+      "derived_from_theme": "The workflow, not the model, is the missing piece"
+    },
+    {
+      "channel": "Meta",
+      "headline": "Can your managers tell good AI output from plausible rubbish?",
+      "derived_from_theme": "Managers cannot judge AI output or delegate to it"
+    }
+  ],
+  "landing_page_headlines": [
+    "Find out whether your people can actually put AI to work",
+    "The pilots are not failing on the technology",
+    "Measure the gap between AI adoption and AI capability",
+    "Twelve minutes to find out where your AI readiness actually breaks"
+  ],
+  "aeo_prompt_list": [
+    "why do enterprise AI pilots fail to scale",
+    "how do I measure whether AI training changed anything",
+    "who should own AI governance in a company",
+    "how do I train managers to review AI output",
+    "AI upskilling programme for a 400 person operations team",
+    "how do we decide what is safe to ship with AI",
+    "best AI readiness assessment for enterprises",
+    "AI training taught by practitioners rather than consultants",
+    "how to stop AI pilots dying when the champion leaves",
+    "what should an AI capability programme cover for professional services"
+  ]
+}

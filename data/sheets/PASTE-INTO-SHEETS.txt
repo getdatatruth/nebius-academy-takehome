@@ -1,0 +1,61 @@
+SEEDING THE GOOGLE SHEET
+
+Create one spreadsheet with five tabs named exactly:
+  benchmark   lane_state   demand_corpus   leads   approval_queue
+
+For each block below: open that tab, click cell A1, paste. Google Sheets
+splits tab-separated text across columns on its own.
+
+======================================================================
+TAB: benchmark
+======================================================================
+segment_key	n	p25_strategy	p50_strategy	p75_strategy	p25_skills	p50_skills	p75_skills	p25_tooling	p50_tooling	p75_tooling	p25_governance	p50_governance	p75_governance
+financial_services_1000plus	47	30	46	62	28	44	61	34	50	66	25	39	55
+software_1000plus	63	42	58	73	40	57	72	46	62	77	33	48	64
+gaming_250_999	12	33	50	66	35	52	68	41	57	71	30	46	60
+logistics_1000plus	8	24	40	57	22	38	55	28	44	60	20	34	49
+professional_services_50_249	15	36	52	68	34	51	67	39	55	70	28	43	58
+financial_services_all	96	29	45	61	27	43	60	33	49	65	24	38	54
+software_all	121	41	57	72	39	56	71	45	61	76	32	47	63
+gaming_all	38	34	51	67	36	53	69	42	58	72	31	47	61
+logistics_all	19	25	41	58	23	39	56	29	45	61	21	35	50
+professional_services_all	41	37	53	69	35	52	68	40	56	71	29	44	59
+
+======================================================================
+TAB: lane_state
+======================================================================
+lane	mode	consecutive_unchanged	threshold
+HOT_LD	manual	3	20
+HOT_TECH	manual	0	20
+MQL_LD	auto	20	20
+MQL_TECH	manual	11	20
+
+======================================================================
+TAB: demand_corpus
+======================================================================
+submission_id	timestamp	industry	stated_priority
+seed_0001	2026-08-20T00:00:00Z	Financial Services	We bought licences for everyone and usage fell off a cliff after month two
+seed_0002	2026-08-20T00:00:00Z	Financial Services	Compliance will not sign off on anything customer facing until someone owns the risk
+seed_0003	2026-08-20T00:00:00Z	Logistics	Pilots keep dying when the person who championed them moves on
+seed_0004	2026-08-20T00:00:00Z	Software and Technology	Engineers are shipping AI features faster than we can review them
+seed_0005	2026-08-20T00:00:00Z	Gaming	Nobody can tell me which of our AI experiments are actually worth continuing
+seed_0006	2026-08-20T00:00:00Z	Telecommunications	Our managers do not know what to delegate to AI and what to keep
+seed_0007	2026-08-20T00:00:00Z	Professional Services	Clients are asking what our AI capability is and we do not have a straight answer
+seed_0008	2026-08-20T00:00:00Z	Software and Technology	"We have the models
+seed_0009	2026-08-20T00:00:00Z	Financial Services	"Training happened
+seed_0010	2026-08-20T00:00:00Z	Logistics	Every team is doing its own thing with AI and none of it joins up
+seed_0011	2026-08-20T00:00:00Z	Gaming	We need our leads to be able to tell good AI output from plausible rubbish
+seed_0012	2026-08-20T00:00:00Z	Telecommunications	The tools moved on again and the training we ran last year is already out of date
+seed_0013	2026-08-20T00:00:00Z	Professional Services	Getting the team using AI without everything sounding the same
+seed_0014	2026-08-20T00:00:00Z	Financial Services	We cannot measure whether any of this has made anyone more productive
+
+======================================================================
+TAB: leads   (header row only, the workflow fills the rest)
+======================================================================
+submission_id	timestamp	name	email	company	title	company_size	industry	seniority	role_family	buyer_model	overall_score	weakest_section	fit_score	band	score_reasons	benchmark_available	benchmark_statement	benchmark_segment	recommended_angle	missing_seat	draft_subject	draft_body	forwardable_note	gate_verdict	failure_reason	lane	mode	action_taken
+
+======================================================================
+TAB: approval_queue   (header row only)
+======================================================================
+submission_id	lane	draft_subject	draft_body	forwardable_note	status
+

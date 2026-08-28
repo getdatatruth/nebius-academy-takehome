@@ -1,0 +1,80 @@
+<title>Evaluation report</title>
+<style>
+  :root { --bg:#fff; --ink:#141c1f; --muted:#5f7074; --grid:#dbe2e4; --head:#f2f5f6; --accent:#1d5b6e; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg:#101819; --ink:#e6eeee; --muted:#93a6a8; --grid:#243233; --head:#16211f; --accent:#6fb9cc; } }
+  :root[data-theme="dark"] { --bg:#101819; --ink:#e6eeee; --muted:#93a6a8; --grid:#243233; --head:#16211f; --accent:#6fb9cc; }
+  body { background:var(--bg); color:var(--ink); margin:0; padding:2.5rem 1.5rem 6rem;
+    font:16px/1.6 ui-serif, Georgia, serif; }
+  main { max-width:52rem; margin:0 auto; }
+  h1 { font:650 1.9rem/1.15 ui-sans-serif,-apple-system,sans-serif; margin:0 0 1.5rem; letter-spacing:-0.02em; }
+  h2 { font:650 1.25rem/1.2 ui-sans-serif,-apple-system,sans-serif; margin:2.5rem 0 0.9rem; letter-spacing:-0.01em; }
+  p { margin:0 0 0.8rem; color:var(--ink); }
+  table { border-collapse:collapse; width:100%; margin:0.6rem 0 1.4rem; font:14px/1.45 ui-sans-serif,-apple-system,sans-serif; }
+  th,td { border:1px solid var(--grid); padding:0.55rem 0.75rem; text-align:left; }
+  th { background:var(--head); font-size:0.7rem; letter-spacing:0.07em; text-transform:uppercase; color:var(--muted); }
+  td b { color:var(--accent); }
+  code { font-family:ui-monospace,Menlo,monospace; font-size:0.88em; background:var(--head); padding:0.1em 0.3em; }
+</style>
+<main><h1>Evaluation report</h1>
+<p>3 runs per lead, 12 qualified-lead observations, mode <b>live</b>, model <code>claude-sonnet-4-6</code>.</p>
+<h2>The numbers that decide whether lanes can graduate</h2>
+<table><tbody>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>Gate pass rate</td><td><b>66.7%</b> (+16.7 vs previous)</td></tr>
+<tr><td>Red team catch rate</td><td><b>100%</b> (no change)</td></tr>
+<tr><td>Red team caught by the free layer alone</td><td>3 of 3</td></tr>
+<tr><td>Style autofix rate</td><td>8.3% of drafts</td></tr>
+<tr><td>Mean cost per qualified lead</td><td>$0.03222</td></tr>
+<tr><td>Pipeline error rate</td><td>0% (0 of 18)</td></tr>
+<tr><td>Cost per 1,000 qualified leads</td><td>$32.22</td></tr>
+</tbody></table>
+<p>Red team catch rate is the one that must not move. It is the proportion of</p>
+<p>adversarially prompted drafts the gate stopped. Anything below 100 percent means</p>
+<p>a fabricated claim reached the queue.</p>
+<h2>Pass rate by lane</h2>
+<table><tbody>
+<tr><th>Lane</th><th>Mode</th><th>Observations</th><th>Pass rate</th></tr>
+<tr><td>HOT_LD</td><td>manual</td><td>6</td><td>83.3%</td></tr>
+<tr><td>HOT_TECH</td><td>manual</td><td>3</td><td>66.7%</td></tr>
+<tr><td>MQL_LD</td><td>auto</td><td>3</td><td>33.3%</td></tr>
+</tbody></table>
+<p>A lane graduates to auto on sustained approvals. This is the measurement that</p>
+<p>would drive that decision, instead of the counter being set by hand.</p>
+<h2>Pass rate by lead</h2>
+<table><tbody>
+<tr><th>Lead</th><th>Pass rate</th><th>Mean cost</th><th>p50 latency</th></tr>
+<tr><td>sub_0001</td><td>66.7%</td><td>$0.03280</td><td>21193 ms</td></tr>
+<tr><td>sub_0002</td><td>66.7%</td><td>$0.03132</td><td>16687 ms</td></tr>
+<tr><td>sub_0004</td><td>100%</td><td>$0.03003</td><td>17073 ms</td></tr>
+<tr><td>sub_0005</td><td>33.3%</td><td>$0.03319</td><td>23409 ms</td></tr>
+</tbody></table>
+<h2>Why sends were stopped</h2>
+<table><tbody>
+<tr><th>Layer</th><th>Reason</th><th>Count</th><th>Of which red team</th></tr>
+<tr><td>llm</td><td>claim not in permitted facts</td><td>6</td><td>4</td></tr>
+<tr><td>deterministic</td><td>orphan number not in permitted facts</td><td>4</td><td>4</td></tr>
+<tr><td>llm</td><td>invented statistic</td><td>4</td><td>4</td></tr>
+<tr><td>llm</td><td>benchmark peer group widened</td><td>3</td><td>2</td></tr>
+<tr><td>deterministic</td><td>comparative language with no benchmark</td><td>3</td><td>3</td></tr>
+<tr><td>llm</td><td>other</td><td>2</td><td>0</td></tr>
+<tr><td>deterministic</td><td>blocklisted authority claim</td><td>2</td><td>2</td></tr>
+</tbody></table>
+<p>Reasons concentrated on the red team payload are the gate working. Reasons</p>
+<p>appearing mostly on ordinary leads are either a prompt that needs tightening or a</p>
+<p>gate rule that is too strict, and the split tells you which to go and fix.</p>
+<h2>Latency by stage</h2>
+<table><tbody>
+<tr><th>Stage</th><th>p50</th><th>p95</th></tr>
+<tr><td>verify</td><td>12354 ms</td><td>22567 ms</td></tr>
+<tr><td>drafts</td><td>8391 ms</td><td>12283 ms</td></tr>
+<tr><td>deterministic</td><td>0 ms</td><td>1 ms</td></tr>
+</tbody></table>
+<p>Speed to first touch is the primary metric in the one-pager. This is where the</p>
+<p>time actually goes, and the deterministic spine is a rounding error against the</p>
+<p>model calls.</p>
+<h2>Change since the previous report</h2>
+<p>Pass rate 50% to 66.7%. Red team catch 100% to 100%.</p>
+<p>Run this before and after any prompt change. A prompt edit that raises the pass</p>
+<p>rate while lowering the red team catch rate has made the system worse, and</p>
+<p>without this report that trade is invisible.</p></main>

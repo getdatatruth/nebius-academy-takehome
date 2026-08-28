@@ -1,0 +1,5 @@
+{
+  "verdict": "PASS",
+  "notes": "Every numeric and comparative statement traces to a permitted fact. Remaining language is opinion or generic sales framing, which is out of scope for this gate.",
+  "findings": []
+}

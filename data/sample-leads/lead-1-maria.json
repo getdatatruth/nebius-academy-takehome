@@ -1,0 +1,16 @@
+{
+  "submission_id": "sub_0001",
+  "submitted_at": "2026-08-26T09:14:00Z",
+  "first_name": "Maria",
+  "last_name": "Alvarez",
+  "work_email": "maria.alvarez@bancoexample.cl",
+  "company_name": "Banco Example",
+  "job_title": "Head of Learning and Development",
+  "country": "Chile",
+  "assessment": {
+    "overall_score": 34,
+    "sections": { "strategy": 41, "skills": 22, "tooling": 45, "governance": 28 },
+    "team_size_to_upskill": 400,
+    "stated_priority": "Rolling out AI tools to customer operations teams without losing quality"
+  }
+}

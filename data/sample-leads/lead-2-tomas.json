@@ -1,0 +1,16 @@
+{
+  "submission_id": "sub_0002",
+  "submitted_at": "2026-08-26T10:02:00Z",
+  "first_name": "Tomas",
+  "last_name": "Berg",
+  "work_email": "tomas.berg@playlinegames.se",
+  "company_name": "Playline Games",
+  "job_title": "Chief Technology Officer",
+  "country": "Sweden",
+  "assessment": {
+    "overall_score": 58,
+    "sections": { "strategy": 62, "skills": 55, "tooling": 71, "governance": 39 },
+    "team_size_to_upskill": 120,
+    "stated_priority": "Our engineers use AI daily but nobody can tell me what is safe to ship"
+  }
+}

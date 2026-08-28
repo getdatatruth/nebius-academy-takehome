@@ -1,0 +1,11 @@
+submission_id,lane,draft_subject,draft_body,forwardable_note,status
+sub_0002,HOT_TECH,"Playline's governance gap, and what others in gaming are doing about it","Tomas,
+
+Your AI readiness assessment flagged governance as Playline's weakest area, scoring 39, which is below the median among gaming organisations that have completed this assessment (n=38). That maps directly to what you said: engineers shipping AI daily with no shared framework for what is safe to go out the door.
+
+Nebius Academy's AI for Managers programme is built around decision frameworks and oversight, taught by practitioners who run AI in production. It is designed for the leadership layer, not just the engineers.
+
+Would a 20-minute call this week be useful to see whether it fits what you are trying to fix?
+
+Adam O'Flynn
+Nebius Academy","Tomas ran an AI readiness assessment for Playline Games and the numbers point to a real rollout problem. Governance scored 39, which is below the median among gaming organisations that have completed this assessment. Tomas's own summary: engineers use AI daily but nobody can tell him what is safe to ship. There are 120 people to upskill. Nebius Academy builds role-based programmes around that kind of cohort and measures capability uplift. Worth a conversation about how to structure it.",pending

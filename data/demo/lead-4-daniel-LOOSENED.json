@@ -1,0 +1,22 @@
+{
+  "submission_id": "sub_0004_loosened",
+  "submitted_at": "2026-08-26T14:31:00Z",
+  "first_name": "Daniel",
+  "last_name": "Whitmore",
+  "work_email": "daniel.whitmore@corvuslogistics.nl",
+  "company_name": "Corvus Logistics",
+  "job_title": "VP People",
+  "country": "Netherlands",
+  "assessment": {
+    "overall_score": 45,
+    "sections": {
+      "strategy": 52,
+      "skills": 38,
+      "tooling": 57,
+      "governance": 33
+    },
+    "team_size_to_upskill": 250,
+    "stated_priority": "We have run three AI pilots in warehouse operations and none of them stuck"
+  },
+  "_demo_loosen_prompt": true
+}

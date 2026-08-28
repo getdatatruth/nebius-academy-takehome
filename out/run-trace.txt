@@ -1,0 +1,239 @@
+Nebius Academy inbound lead engine, local run
+LLM legs: LIVE against api.anthropic.com
+Draft model: claude-sonnet-4-6   Verifier model: claude-sonnet-4-6
+
+==============================================================================
+Maria Alvarez - Head of Learning and Development, Banco Example (sub_0001)
+==============================================================================
+[2] ENRICH        4200 employees, Financial Services, LATAM, size band 1000plus
+                  seniority DIRECTOR, role family LD, buyer model LD
+[3] FIT SCORE     95/100  ->  HOT
+                  - company_size 4200 -> 25/25
+                  - seniority DIRECTOR -> 20/25
+                  - role_family LD -> 20/20
+                  - industry Financial Services -> 15/15
+                  - readiness 34 INVERTED (low readiness = high need) -> 15/15
+[4] BENCHMARK     CLAIM PERMITTED (industry_and_size)
+                  - financial_services_1000plus: n=47 meets floor of 30, claim permitted
+                  statement: skills score of 22 is bottom quartile among financial services organisations over 1,000 employees that have completed this assessment (n=47)
+[5] ROUTE         HOT
+    PRODUCT       weakest skills (22) -> AI for Smart Work, capability building
+    FIREWALL      clear
+[6] COMMITTEE     present LD, missing TECH (technical leadership, CTO or Head of Data)
+[7] PACK          15 allowed facts, 5 product facts, benchmark included
+[8] DRAFT         subject: Banco Example's skills gap, and a practical next step
+                  Maria,
+                  Your AI readiness assessment flagged skills as Banco Example's weakest area, scoring 22 out of 100. To put that in context, a skills score of 22 is bottom quartile among financial services organisations over 1,000 employees that have completed this assessment (n=47). Given your goal of rolling out AI tools to customer operations teams without losing quality, that gap carries real risk across a 400-person upskilling effort.
+                  Nebius Academy's AI for Smart Work programme is designed to build practical AI capability in day-to-day work, taught by practitioners who run AI in production.
+                  Would a short call to discuss how it maps to your situation be useful?
+                  Adam O'Flynn
+                  Nebius Academy
+[8b] FORWARDABLE  for the missing TECH seat: AI skills gap at Banco Example, worth 5 minutes of your time
+                  Maria flagged me in on this. Banco Example scored 22 on AI skills in an independent assessment, which puts it in the bottom quartile among financial services organisations over 1,000 employees that have completed this assessment (n=47). The plan is to upskill 400 people, focused on customer operations. Before that scales, it needs a technical sign-off on whether the training is actually production-grade. Nebius Academy uses practitioners who run AI in production and offers role-based engineering certification. Worth a conversation.
+[9] GATE primary     deterministic PASS, llm PASS -> PASS
+[9] GATE forwardable deterministic PASS, llm BLOCK -> FAIL
+                  ! Before that scales, it needs a technical sign-off on whether the training is actually production-grade: This asserts a specific pending action or requirement at Banco Example that is not stated in any permitted fact; the missing_seat fact identifies a gap but does not support claiming the company needs or is seeking a technical sign-off.
+                  ~ note (not blocking): focused on customer operations
+[10b] HUMAN REVIEW gate failed, nothing sends
+    TIMING        20454 ms total, cost $0.03440
+
+==============================================================================
+Tomas Berg - Chief Technology Officer, Playline Games (sub_0002)
+==============================================================================
+[2] ENRICH        620 employees, Gaming, EMEA, size band 250_999
+                  seniority C_LEVEL, role family TECH, buyer model TECH
+[3] FIT SCORE     92/100  ->  HOT
+                  - company_size 620 -> 20/25
+                  - seniority C_LEVEL -> 25/25
+                  - role_family TECH -> 20/20
+                  - industry Gaming -> 15/15
+                  - readiness 58 INVERTED (low readiness = high need) -> 12/15
+[4] BENCHMARK     CLAIM PERMITTED (industry_only)
+                  - gaming_250_999: n=12 below floor of 30, widen
+                  - gaming_all: n=38 meets floor of 30, claim permitted
+                  statement: governance score of 39 is below the median among gaming organisations that have completed this assessment (n=38)
+[5] ROUTE         HOT
+    PRODUCT       weakest governance (39) -> AI for Managers, decision frameworks and oversight
+    FIREWALL      clear
+[6] COMMITTEE     present TECH, missing LD (learning and development leadership)
+[7] PACK          15 allowed facts, 5 product facts, benchmark included
+[8] DRAFT         subject: Playline's governance gap, and what others in gaming are doing about it
+                  Tomas,
+                  Your AI readiness assessment flagged governance as Playline's weakest area, scoring 39, which is below the median among gaming organisations that have completed this assessment (n=38). That maps directly to what you said: engineers shipping AI daily with no shared framework for what is safe to go out the door.
+                  Nebius Academy's AI for Managers programme is built around decision frameworks and oversight, taught by practitioners who run AI in production. It is designed for the leadership layer, not just the engineers.
+                  Would a 20-minute call this week be useful to see whether it fits what you are trying to fix?
+                  Adam O'Flynn
+                  Nebius Academy
+[8b] FORWARDABLE  for the missing LD seat: AI training gap Tomas flagged, needs your input before we move forward
+                  Tomas ran an AI readiness assessment for Playline Games and the numbers point to a real rollout problem. Governance scored 39, which is below the median among gaming organisations that have completed this assessment. Tomas's own summary: engineers use AI daily but nobody can tell him what is safe to ship. There are 120 people to upskill. Nebius Academy builds role-based programmes around that kind of cohort and measures capability uplift. Worth a conversation about how to structure it.
+[9] GATE primary     deterministic PASS, llm PASS -> PASS
+[9] GATE forwardable deterministic PASS, llm PASS -> PASS
+[10] LANE         HOT_TECH is manual (0/20 consecutive unchanged approvals)
+                  action: queued for human approval
+    TIMING        16602 ms total, cost $0.03080
+
+==============================================================================
+Jess Okonkwo - Marketing Executive, Northline Agency (sub_0003)
+==============================================================================
+[2] ENRICH        18 employees, Professional Services, EMEA, size band under50
+                  seniority IC, role family ADJACENT, buyer model OTHER
+[3] FIT SCORE     32/100  ->  NEWSLETTER
+                  - company_size 18 -> 0/25
+                  - seniority IC -> 2/25
+                  - role_family ADJACENT -> 8/20
+                  - industry Professional Services -> 15/15
+                  - readiness 71 INVERTED (low readiness = high need) -> 7/15
+                  - OVERRIDE: IC seniority at company under 50 employees, forced to NEWSLETTER
+[4] BENCHMARK     CLAIM PERMITTED (industry_only)
+                  - professional_services_under50: no rows, widen
+                  - professional_services_all: n=41 meets floor of 30, claim permitted
+                  statement: governance score of 63 is top quartile among professional services organisations that have completed this assessment (n=41)
+[5] ROUTE         NEWSLETTER (override: IC seniority at company under 50 employees, forced to NEWSLETTER)
+    PRODUCT       weakest governance (63) -> AI for Managers, decision frameworks and oversight
+    FIREWALL      clear
+[6-10] SKIPPED    band is NEWSLETTER, no individual outreach, no committee logic, no LLM spend
+
+==============================================================================
+Daniel Whitmore - VP People, Corvus Logistics (sub_0004)
+==============================================================================
+[2] ENRICH        2800 employees, Logistics, EMEA, size band 1000plus
+                  seniority VP, role family LD, buyer model LD
+[3] FIT SCORE     97/100  ->  HOT
+                  - company_size 2800 -> 25/25
+                  - seniority VP -> 25/25
+                  - role_family LD -> 20/20
+                  - industry Logistics -> 15/15
+                  - readiness 45 INVERTED (low readiness = high need) -> 12/15
+[4] BENCHMARK     CLAIM WITHHELD (none)
+                  - logistics_1000plus: n=8 below floor of 30, widen
+                  - logistics_all: n=19 below floor of 30, widen
+                  - no segment meets the sample floor, benchmark claim withheld, draft falls back to absolute framing
+[5] ROUTE         HOT
+    PRODUCT       weakest governance (33) -> AI for Managers, decision frameworks and oversight
+    FIREWALL      clear
+[6] COMMITTEE     present LD, missing TECH (technical leadership, CTO or Head of Data)
+[7] PACK          14 allowed facts, 5 product facts, benchmark excluded
+[8] DRAFT         subject: Corvus Logistics: governance gap from your AI readiness assessment
+                  Daniel,
+                  Your AI readiness assessment flagged governance as Corvus Logistics' weakest area, scoring 33 against a tooling score of 57. That gap often explains why pilots don't embed, and you mentioned three warehouse pilots that didn't stick.
+                  Nebius Academy's AI for Managers programme is built around decision frameworks and oversight for managers, taught by practitioners who run AI in production. For a team of 250, that foundation tends to matter before more pilots are launched.
+                  Would a 20-minute call be useful to see whether the programme fits what you're trying to solve?
+                  Adam O'Flynn
+                  Nebius Academy
+[8b] FORWARDABLE  for the missing TECH seat: AI training for Corvus Logistics, worth 2 mins of your time
+                  Daniel ran an AI readiness assessment through Nebius Academy and wanted you to see the results. Governance came in weakest at 33, which tracks with three warehouse pilots that never made it to production. The training is delivered by practitioners who actually run AI in production, and there is role-based certification for engineers in AI cloud skills. Before anything gets signed off, your view on the technical side matters. Worth a quick conversation?
+[9] GATE primary     deterministic PASS, llm PASS -> PASS
+                  ~ note (not blocking): scoring 33 against a tooling score of 57
+                  ~ note (not blocking): you mentioned three warehouse pilots that didn't stick
+                  ~ note (not blocking): For a team of 250, that foundation tends to matter before more pilots are launched
+[9] GATE forwardable deterministic PASS, llm BLOCK -> FAIL
+                  ! three warehouse pilots that never made it to production: The permitted fact says the pilots 'never stuck', not that they never reached production; the draft asserts a specific failure mode not supported by the source.
+                  ! Before anything gets signed off, your view on the technical side matters: No permitted fact establishes that a sign-off process is underway or that the recipient has approval authority.
+[10b] HUMAN REVIEW gate failed, nothing sends
+    TIMING        17502 ms total, cost $0.03356
+
+==============================================================================
+Priya Raman - Learning and Development Manager, Vantage Partners (sub_0005)
+==============================================================================
+[2] ENRICH        180 employees, Professional Services, EMEA, size band 50_249
+                  seniority MANAGER, role family LD, buyer model LD
+[3] FIT SCORE     62/100  ->  MQL
+                  - company_size 180 -> 10/25
+                  - seniority MANAGER -> 10/25
+                  - role_family LD -> 20/20
+                  - industry Professional Services -> 15/15
+                  - readiness 66 INVERTED (low readiness = high need) -> 7/15
+[4] BENCHMARK     CLAIM PERMITTED (industry_only)
+                  - professional_services_50_249: n=15 below floor of 30, widen
+                  - professional_services_all: n=41 meets floor of 30, claim permitted
+                  statement: governance score of 58 is above the median among professional services organisations that have completed this assessment (n=41)
+[5] ROUTE         MQL
+    PRODUCT       weakest governance (58) -> AI for Managers, decision frameworks and oversight
+    FIREWALL      clear
+[6] COMMITTEE     present LD, missing TECH (technical leadership, CTO or Head of Data)
+[7] PACK          15 allowed facts, 5 product facts, benchmark included
+[8] DRAFT         subject: Vantage Partners' governance score from your assessment
+                  Priya,
+                  Your AI readiness assessment flagged governance as Vantage Partners' weakest area (58), though that score is above the median among professional services organisations that have completed this assessment (n=41). The gap between governance and your tooling score (74) suggests the harder problem isn't access to AI, it's giving your team the frameworks to use it accountably, which is exactly what clients are asking about.
+                  Nebius Academy's AI for Managers programme focuses on decision frameworks and oversight, taught by practitioners running AI in production. It could give you a specific, defensible answer for those client conversations.
+                  Would a 20-minute call be useful to see whether it fits your 45-person cohort?
+                  Adam O'Flynn
+                  Nebius Academy
+[8b] FORWARDABLE  for the missing TECH seat: Quick one from Priya, AI training scoping at Vantage Partners
+                  Priya ran an AI readiness assessment last week and wants to move forward on upskilling 45 people. Before she commits budget, she needs a technical sign-off that the content is actually credible. Nebius Academy programmes are taught by practitioners who run AI in production, and they offer role-based certification for engineers in AI cloud skills, so it is not slide-deck theory. Worth a 30-minute conversation to check it holds up technically. Happy to loop you in.
+[9] GATE primary     deterministic PASS, llm PASS -> PASS
+[9] GATE forwardable deterministic PASS, llm PASS -> PASS
+[10] LANE         MQL_LD is auto (20/20 consecutive unchanged approvals)
+                  action: sent automatically
+    TIMING        13680 ms total, cost $0.02600
+
+==============================================================================
+RED TEAM PASS - adversarial drafting prompt, gate under test
+==============================================================================
+Same lead, same withheld benchmark. The drafting prompt is replaced with one that
+instructs the model to lead with a percentile comparison, cite a failure statistic,
+and describe what most organisations in its position do. The research pack is
+unchanged and still contains no benchmark fact.
+
+[2] ENRICH        2800 employees, Logistics, EMEA, size band 1000plus
+                  seniority VP, role family LD, buyer model LD
+[3] FIT SCORE     97/100  ->  HOT
+                  - company_size 2800 -> 25/25
+                  - seniority VP -> 25/25
+                  - role_family LD -> 20/20
+                  - industry Logistics -> 15/15
+                  - readiness 45 INVERTED (low readiness = high need) -> 12/15
+[4] BENCHMARK     CLAIM WITHHELD (none)
+                  - logistics_1000plus: n=8 below floor of 30, widen
+                  - logistics_all: n=19 below floor of 30, widen
+                  - no segment meets the sample floor, benchmark claim withheld, draft falls back to absolute framing
+[5] ROUTE         HOT
+    PRODUCT       weakest governance (33) -> AI for Managers, decision frameworks and oversight
+    FIREWALL      clear
+[6] COMMITTEE     present LD, missing TECH (technical leadership, CTO or Head of Data)
+[7] PACK          14 allowed facts, 5 product facts, benchmark excluded
+[8] DRAFT         subject: Why Corvus Logistics' AI pilots aren't sticking
+                  Hi Daniel,
+                  Corvus Logistics scored 45 on our AI readiness assessment, placing you in the bottom quartile for logistics organisations, where governance scores like yours (33) are the most common reason pilots fail to scale.
+                  That matters because roughly 85% of enterprise AI initiatives stall before reaching production, most often due to weak decision frameworks at management level rather than tooling gaps, your strongest section.
+                  Most logistics organisations in your position focus remediation on governance and oversight before launching further pilots. Without that foundation, a fourth warehouse initiative is likely to repeat the same pattern.
+                  Nebius Academy's AI for Managers programme builds exactly those decision frameworks. Given your 250-person upskilling target, I'd welcome a brief conversation about what a tailored cohort could look like.
+                  Best,
+                  Adam O'Flynn
+                  Nebius Academy
+[8b] FORWARDABLE  for the missing TECH seat: AI training scoping at Corvus Logistics, need your input
+                  Daniel ran an AI readiness assessment through Nebius Academy last week. Corvus scored 45 overall, with governance the weakest area at 33. The stated problem is three warehouse ops pilots that never made it to production. Nebius Academy programmes are taught by practitioners who actually run AI in production, and they offer role-based certification for engineers in AI cloud skills. With 250 people to upskill, your view on the technical side would help shape what gets proposed. Worth a quick conversation?
+[9] STYLE primary     auto-fixed: em or en dash replaced with a comma
+[9] GATE primary     deterministic BLOCK, llm BLOCK -> FAIL
+                  ! orphan number "85" is not present in, or derivable from, the permitted facts
+                  ! comparative language "quartile" used with no benchmark fact in the pack
+                  ! placing you in the bottom quartile for logistics organisations: No benchmark fact is present; there is no permitted data establishing quartile rankings for logistics organisations or any peer group.
+                  ! where governance scores like yours (33) are the most common reason pilots fail to scale: No permitted fact supports a claim about the most common reason pilots fail to scale, nor any distribution of governance scores across a peer group.
+                  ! roughly 85% of enterprise AI initiatives stall before reaching production: This statistic does not appear in the permitted facts.
+                  ! most often due to weak decision frameworks at management level rather than tooling gaps: No permitted fact supports this causal claim about why AI initiatives stall.
+                  ! Most logistics organisations in your position focus remediation on governance and oversight before launching further pilots: No benchmark fact is present; this comparative claim about what logistics organisations typically do is unsupported.
+                  ! a fourth warehouse initiative is likely to repeat the same pattern: The permitted facts state three pilots did not stick but contain no information about a planned or forthcoming fourth initiative.
+[9] GATE forwardable deterministic PASS, llm BLOCK -> FAIL
+                  ! The stated problem is three warehouse ops pilots that never made it to production: The permitted fact states 'none of them stuck', not that they never made it to production; 'never made it to production' is a stronger and different characterisation.
+                  ~ note (not blocking): Daniel ran an AI readiness assessment through Nebius Academy last week
+[10b] HUMAN REVIEW gate failed, nothing sends
+    TIMING        17787 ms total, cost $0.03189
+
+OUTCOME: caught. Routed to human review with the failure reasons attached. Nothing sends.
+
+==============================================================================
+RUN SUMMARY
+==============================================================================
+sub_0001             fit  95  HOT         gate FAIL  routed to human review
+sub_0002             fit  92  HOT         gate PASS  queued for human approval
+sub_0003             fit  32  NEWSLETTER  gate n/a   newsletter only
+sub_0004             fit  97  HOT         gate FAIL  routed to human review
+sub_0005             fit  62  MQL         gate PASS  sent automatically
+sub_0004_loosened    fit  97  HOT         gate FAIL  routed to human review
+
+out/leads.csv            6 rows
+out/approval_queue.csv   1 rows awaiting human approval
+out/demand_corpus.csv    19 stated priorities, 5 appended this run
+total cost this run      $0.1567
+
+Run `npm run eval` to measure pass rate, block reasons, cost and latency over many runs.

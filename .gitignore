@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+.env
+
+# n8n's local database. Contains the encrypted Anthropic credential.
+.n8n-data/
+
+# Browser automation scratch
+.playwright-mcp/
+
+# Presentation notes, not part of the submission
+docs/loom-script.md
+out/loom-6min.html
+out/loom-teleprompter.html

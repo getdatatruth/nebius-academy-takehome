@@ -1,0 +1,13 @@
+{
+  "subject": "Your skills score of 22, and what sits behind it",
+  "body": "Maria,\n\nYour Banco Example assessment put skills at 22, which is bottom quartile among financial services organisations over 1,000 employees that have completed it (n=47). Tooling came out at 45, so the constraint looks like capability rather than technology.\n\nThat matters for what you described, rolling out AI tools to customer operations teams without losing quality. With 400 people in scope, the sequencing decision is worth getting right early.\n\nNebius Academy programmes are taught by practitioners who run AI in production, so the material is built around what holds up at scale.\n\nWorth 20 minutes to walk through the skills gap?\n\nAdam",
+  "facts_used": [
+    "weakest_section: skills (22)",
+    "strongest_section: tooling (45)",
+    "company_name: Banco Example",
+    "team_size_to_upskill: 400",
+    "stated_priority: Rolling out AI tools to customer operations teams without losing quality",
+    "benchmark: skills score of 22 is bottom quartile among financial services organisations over 1,000 employees that have completed this assessment (n=47)",
+    "Programs are taught by practitioners who run AI in production"
+  ]
+}
